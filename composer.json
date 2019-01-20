@@ -1,0 +1,38 @@
+{
+  "name": "unforge/cache-tarantool-toolkit",
+  "description": "Cache Tarantool Toolkit",
+  "type": "library",
+  "homepage": "https://github.com/unforge/cache-tarantool-toolkit",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ronam Unstirred",
+      "email": "unforge.coder@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "unforge/cache-abstraction": "dev-master",
+    "unforge/array-toolkit": "dev-master",
+    "unforge/logger-toolkit": "dev-master",
+    "tarantool/client": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.5",
+    "squizlabs/php_codesniffer": "~2.2",
+    "jakub-onderka/php-parallel-lint": "0.8.*",
+    "satooshi/php-coveralls": "0.6.*"
+  },
+  "autoload": {
+    "classmap": ["src/"],
+    "psr-4": {
+      "Unforge\\Toolkit\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": ["tests/"],
+    "psr-4": {
+      "Unforge\\ToolkitTests\\CacheTests\\": "tests/"
+    }
+  }
+}
